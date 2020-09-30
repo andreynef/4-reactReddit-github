@@ -1,0 +1,45 @@
+.commentsButtonContainer {
+
+}
+
+.commentsButton {
+    display: flex;
+    align-items: center;
+}
+
+.commentsButton>svg{
+    width: 14px;
+    height: 14px;
+}
+
+.commentsButton * {
+    color: var(--grayC4);
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.commentsDropdown{
+    padding: 20px 0 0 0;
+    position: relative;
+}
+
+.commentsDropdown p{
+    line-height: 24px;
+}
+
+.commentsButtonContainer button:hover span,
+.commentsButtonContainer button:focus-within span{
+    color: var(--orange);
+}
+
+.commentsButtonContainer button:hover > svg > path,
+.commentsButtonContainer button:focus-within > svg > path{
+    fill: var(--orange);
+}
+
+@media all and (min-width: 1024px) {
+    .commentsButton * {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

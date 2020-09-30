@@ -1,0 +1,30 @@
+.actions {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.actions button {
+    width: 20px;
+    height: 20px;
+    background-color: var(--grayC4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions button svg {
+    width: 10px;
+    height: 10px;
+}
+
+.actions button svg path {
+    fill: var(--white);
+}
+
+@media all and (min-width: 1024px) {
+    .actions {
+        display: none;
+    }
+}

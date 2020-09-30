@@ -1,0 +1,39 @@
+.actionSeen {
+    display: block;
+}
+
+.actionsContentContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+}
+.actionsContentContainer > button:hover span ,
+.actionsContentContainer > button:focus-within span,
+.actionsContentContainer > button:focus-within > svg > path {
+    color: var(--orange);
+}
+
+.actionsContentContainer > button:hover > svg > path,
+.actionsContentContainer > button:focus-within > svg > path{
+    fill: var(--orange);
+}
+
+.actionsContentContainer button{
+    display: none;
+}
+
+@media all and (min-width: 1024px) {
+    .actionsContentContainer button {
+        display: flex;
+        align-items: center;
+    }
+
+    .actionsContentContainer button svg {/*примерное увеличение свг пачкой*/
+        width: 1.3em;
+        height: 1.3em;
+    }
+}
+
+@media all and (min-width: 1540px) {
+
+}

@@ -1,0 +1,39 @@
+.item {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.visualThreadContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrows svg:last-child{
+    transform: rotate(180deg);
+}
+
+.line {
+    height: 100%;
+    width: 3px;
+    background-color: var(--grayD9);
+}
+
+.textContainer {
+    padding: 5px 20px 0px 20px;
+}
+
+.textContainer span:first-child + div{/*поймал элемент находящийся в дочерне-рендеруемом элементе и сместил его положение вперед */
+    order: -1;
+}
+
+.actionsContainer div {/*левая попытка убрать линию переписывая класс общего компонента */
+    border-top:none;
+    margin-top: unset;
+}
+
+.item p {
+    margin: 10px 0 0 0;/*переписать завод*/
+    line-height: 24px;
+}
